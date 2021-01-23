@@ -1,0 +1,6 @@
+target/*
+.idea/*
+.idea/compiler.xml
+.idea/misc.xml
+test_data/data.xml
+FoodByte.iml

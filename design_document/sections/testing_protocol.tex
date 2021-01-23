@@ -1,0 +1,77 @@
+
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Order screen & Add an item to current order & Add a burger combo to current menu, menu should then contain a burger combo and the total should be the price of one burger combo & When burger combo is selected, the current order contains one burger combo and the total is now includes the cost of the combo & Pass & Anzac Morel & UC2 \\
+\hline
+Order screen & Remove an item from the current order & Given there is a single burger combo in the current order and the total is \$10.50 when remove is selected the current order is emptied and the total is set to zero. & When the burger combo is removed the current order is empty and the total is now zero. & Pass & Anzac Morel & UC3 \\
+\hline
+Order screen & Confirm an order & Given the current order is not empty when confirm is pressed and cash is received the current order should then be empty and the total equal to zero. & When there is a single burger combo in the order and the confirm button is pressed the order confirmation screen opens. When given the correct cash denomination the system displays the change required and the current order is empty and total is zero. & Pass & Anzac Morel & UC23 \\
+\hline
+Order screen & Cancel an order & Given the current order is not empty when cancel order is pressed the current order is emptied and the total is set to zero. & Given there is one chips in the current order and the total is \$15.50 when cancel is pressed the current order is then empty and the total is then zero. & Pass & Anzac Morel & UC4 \\
+\hline
+\end{tabularx}
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Management screen & Create a menu & Given that there is one menu currently available when a new menu is created then there is two menu tabs available. & When add menu is selected add menu screen opens and details can be input. When confirm is selected the new menu is added to the menu list and is available in the operations screen. & Pass & Anzac Morel & UC7 \\
+\hline
+Management screen & Remove a menu & Given that there is at least one menu current available. When delete menu is selected then there is no menus available. & Currently there is no option to delete a menu. This is to be implemented in the future. & Fail & Rchi Lugtu & UC32 \\
+\hline
+Management screen & Add a menu item. & Given that there is one menu currently available, when a menu item is added, then it should pop up in the existing menu in the system & When a menu item is added from the existing menu, the menu item pops up in the menu, and can be ordered, etc. & Pass & Rchi Lugtu & UC8 \\
+\hline
+\end{tabularx}
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Management screen & Remove a menu item. & Given that there is one menu in the system, when a menu item is removed, then it should disappear in the menu screen for that menu. & When a menu item is removed, then menu item from the existing menu is removed from the menu screen. & Pass & Rchi Lugtu & UC9 \\
+\hline
+Management screen & Edit a menu item. & Given that there is one menu in the system and one menu item in the menu. When a menu item is edited, then the changes should appear in the menu screen for that menu. & When a menu item is edited, then the changes for that menu item is shown in the menu screen. & Pass & Rchi Lugtu & UC10 \\
+\hline
+Management Screen & Add recipes. & Given an existing menu item, when you add a recipe then it should be added for that menu item. & When you click on the ‘edit item’ for that menu item. When you add a description in the recipe field, then click ‘confirm’, it adds that recipe for that menu item. & Pass & Rchi Lugtu & UC11 \\
+\hline
+Management Screen & Remove recipes. & Given an existing menu item, when remove a recipe then it should be removed for that menu item. & When you click on the ‘edit item’ for that menu item. When you get rid of the text in the recipe field, then click ‘confirm’, it removes that recipe for that menu item. & Pass & Rchi Lugtu & UC12 \\
+\hline
+Management Screen & List Recipes & List of recipes should be displayed if list recipes is selected. & No implementation for this feature for the meantime. & Fail & Rchi Lugtu & UC13 \\
+\hline
+\end{tabularx}
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Management screen & Add ingredients (stock) & Given there is no ingredients currently in the system when an item is added the item the item is then in the system and can now have stock added or be edited. When stock for this item is added it’s date arrived and date expired as well as it’s quantity are displayed correctly. & When add item is selected the add item screen is opened. After confirm is pressed the item is then displayed with the option to edit, add stock or add to menu. When add to stock is selected the add stock screen is opened and when data is entered and confirm is selected then the item with the date arrived, expiry date and quantity are displayed correctly. & Pass & Anzac Morel & UC14 \\
+\hline
+Management screen & Update stock & Given that there is currently 10 units of one item in stock and three are used then the current quantity of that item should now be 7. & The stock level of an item is updated once an order is confirmed. & Pass & Anzac Morel & UC15 \\
+\hline
+Management screen & List available stock & Given that there is currently stock in the system when the stock button is pressed then all the available stock is displayed correctly. & When the stock tab is selected all the items that currently have stock are displayed in a table with the date that they arrived and the date that they expire followed by their quantities. & Pass & Anzac Morel & UC16 \\
+\hline
+\end{tabularx}
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Management screen & Check sales & Given that sales have been made on the day when past orders is selected then all the sales for that day are displayed. & When the sales tab is selected sales are represented in a table by a date and a price. Therefore all sales on that given day will be displayed and can be identified by looking at the date. & Pass & Anzac Morel & UC17 \\
+\hline
+Management screen & Generate sales report & Given that sales have been made and generate sales report is selected then a report detailing all the sales that were made is created. & There is currently no option to generate a sales report. This is to be implemented in the future. & Fail & Anzac Morel & UC18 \\
+\hline
+Management screen & Adjust prices & Given that there are items in the system, when edit item is selected and the price adjusted the new price is now displayed. & When the edit item is selected it brings up the modify item screen. There is a price setter at the bottom that can be used to adjust the price. Once confirm is selected the adjusted prices are now displayed in the item menu. & Pass & Anzac Morel & UC19 \\
+\hline
+Management screen & Save menus & Given that there is an existing menu in the system, you should be able to save the changes made from that menu. & When the ‘Edit Menu’ is selected, and make changes to that menu, after clicking ‘confirm’ then it saves changes made to the menu. & Pass & Rchi Lugtu & UC20 \\
+\hline
+\end{tabularx}
+\begin{tabularx}{\linewidth}{|X|X|X|X|c|X|X|}
+\hline
+SUT & Test & Description & Result & Pass/fail & Tester & UC/ requirements \\
+\hline
+Management screen & Load menus & Menu should be displayed in the order screen, after creation. & After adding a menu, then the new menu is displayed in the order screen. & Pass & Rchi Lugtu & UC21 \\
+\hline
+Management screen & Add to production queue & When an order is confirmed a list of the items in the current order is sent to the production queue. & Currently there is no production queue the order simply gets stored as a previous order and current order is reset. To be implemented in the future. & Fail & Anzac Morel & UC28 \\
+\hline
+Management screen & Remove from production queue & When an order is ready for the customer then remove order is selected and the completed order is no longer in the production queue. & Currently there is no production queue. To be implemented in the future. & Fail & Anzac Morel & UC29 \\
+\hline
+Management screen & Print customer receipt & After an order is confirmed then a string representation of all items in the order and their prices. & After the order is confirmed there is a string printed out that contains all items in the order along with their prices. & Pass & Anzac Morel & UC30 \\
+\hline
+\end{tabularx}

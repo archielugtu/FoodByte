@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item_map>
+        <entry>
+            <key uuid="79e1c5bf-ecca-4d8b-a3a5-1c0166c9f994"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="79e1c5bf-ecca-4d8b-a3a5-1c0166c9f994">
+                <name>Cheese Burger Combo</name>
+                <description>Avaliable in small, medium and large</description>
+                <base_price cents="1080"/>
+                <markup_price cents="1999"/>
+                <recipe>
+                    <method>Put it all in the bag</method>
+                </recipe>
+                <tags uuid="2c16418b-5d47-43f3-bcae-2061a7893ad6"/>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="79e1c5af-ecca-4d8b-a3a5-1c0166c9f994"/>
+                    <item uuid="8821e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                    <item uuid="8921e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="79e1c5af-ecca-4d8b-a3a5-1c0166c9f994"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="79e1c5af-ecca-4d8b-a3a5-1c0166c9f994">
+                <name>Cheese Burger</name>
+                <description>Mhmmm sounds good</description>
+                <base_price cents="1080"/>
+                <markup_price cents="1999"/>
+                <recipe>
+                    <method>Just slap that bad boy together</method>
+                </recipe>
+                <tags uuid="2c16418b-5d47-43f3-bcae-2061a7893ad6"/>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="a623c8de-ec5d-4636-bfa0-fe6168c33f30"/>
+                    <item uuid="a723c8de-ec5d-4636-bfa0-fe6168c33f30"/>
+                    <item uuid="8721e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="a623c8de-ec5d-4636-bfa0-fe6168c33f30"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="a623c8de-ec5d-4636-bfa0-fe6168c33f30">
+                <name>Buns</name>
+                <description>Carbs for days</description>
+                <base_price cents="1080"/>
+                <markup_price cents="1999"/>
+                <recipe>
+                    <method>Pre made in bags</method>
+                </recipe>
+                <tags uuid="2c16418b-5d47-43f3-bcae-2061a7893ad6"/>
+                <qty_unit>NUM</qty_unit>
+                <variant_list>
+                    <variant uuid="8321e692-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                    <variant uuid="8421e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                </variant_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="a723c8de-ec5d-4636-bfa0-fe6168c33f30"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="a723c8de-ec5d-4636-bfa0-fe6168c33f30">
+                <name>Patty</name>
+                <description>Nice generic patty</description>
+                <base_price cents="1080"/>
+                <markup_price cents="1999"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <tags uuid="2c16418b-5d47-43f3-bcae-2061a7893ad6"/>
+                <qty_unit>NUM</qty_unit>
+                <variant_list>
+                    <variant uuid="8521e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                    <variant uuid="8521e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                </variant_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8321e692-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8321e692-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Gluten Free Bun</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8421e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8421e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Regular Bread Bun</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8521e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8521e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Meat Patty</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8621e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8621e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Veggie Patty</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8721e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8721e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Cheese</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8821e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8821e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Drink</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8921e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+            <value uuid="8921e663-6b3a-4321-ad6f-c5e6e22a33c5">
+                <name>Chips</name>
+                <description></description>
+                <base_price cents=""/>
+                <markup_price cents=""/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+    </item_map>
+    <item_tag_map>
+        <entry>
+            <key uuid="e8c12c88-62cc-4bc1-89a5-4d5b335456c0"/>
+            <value uuid="e8c12c88-62cc-4bc1-89a5-4d5b335456c0">
+                <name>Gluten Free</name>
+                <is_dominant>true</is_dominant>
+            </value>
+        </entry>
+    </item_tag_map>
+    <menu_map>
+        <entry>
+            <key uuid="096abbbe-2134-4841-939a-e6922e202a97"/>
+            <value uuid="096abbbe-2134-4841-939a-e6922e202a97">
+                <menuitem_list>
+                    <menuitem>
+                        <item uuid="d88efb1d-b9e3-4865-be96-b81cfa1a9089"/>
+                        <name>Mega Burger</name>
+                        <description>Blows your socks off!</description>
+                        <price cents="1050"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="b73f2268-e758-440b-9237-daf2b00193d4"/>
+                        <name>Fire Burger</name>
+                        <description>Spicy</description>
+                        <price cents="1550"/>
+                    </menuitem>
+                </menuitem_list>
+                <name>My Menu</name>
+                <description>Hello I am a menu description</description>
+            </value>
+        </entry>
+    </menu_map>
+    <order_map>
+        <entry>
+            <key uuid="25058b57-6215-4d38-9c24-213335aa5546"/>
+            <value uuid="25058b57-6215-4d38-9c24-213335aa5546">
+                <order_tree>
+                    <dependants>
+                        <quantity>0</quantity>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-09-17T19:34:48.404+12:00</timestamp>
+            </value>
+        </entry>
+    </order_map>
+    <stock_instance_map>
+        <entry>
+            <key uuid="41b0ce5b-8ff1-4d63-8b73-311d79069ffc"/>
+            <value uuid="41b0ce5b-8ff1-4d63-8b73-311d79069ffc">
+                <stock_item uuid="8421e663-6b3a-4321-ad6f-c5e6e22a33c5"/>
+                <date_added>2019-09-17T19:34:48.482+12:00</date_added>
+                <date_expires>2019-09-17T19:34:48.482+12:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>4.0</quantity_remaining>
+            </value>
+        </entry>
+    </stock_instance_map>
+</data>

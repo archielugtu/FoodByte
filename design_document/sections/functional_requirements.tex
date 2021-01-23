@@ -1,0 +1,203 @@
+\subsection{Original Functional Requirements}
+Functional requirements are implementation level descriptions of functionality needed for use cases. They are important for the team as they are well defined goals for what it should be able to do. Below is a list of functional requirements of the application and a user story to express how the system reacts to the user. They are listed in no particular order. \\
+
+
+
+\noindent \textbf{FR1} - Add Cash To Register (UC1)\\
+\begin{small}
+	User can input number of different cash denominations and correct change is given. This action will occur every time a payment is received and needs to occur instantly, as cash will be added frequently and customers are not willing to wait a long time for their change. The system will always compute the correct change and will always complete this action immediately. \\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR2} Calculate change -  (UC1)\\
+\begin{small}
+	When cash is received the system will calculate the changed required ie Amount received - Amount required. This action will occur every time a payment is received and needs to occur instantly, as cash will be added frequently and customers are not willing to wait a long time for their change. The system will always compute the correct change and will always complete this action immediately. \\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR3} Calculate Order Cost - (UC23)\\
+\begin{small}
+	System calculates and displays the sum of all items in the current order. This action will occur every time there is a change in the current order eg. Chips are added to the current order. This action will need to occur instantly so that the customer can be informed of how much they are required to pay for their order. The system will always compute the current order total and will always complete this action immediately.\\
+\end{small}
+\linebreak
+
+
+
+\noindent \textbf{FR4} Add Item to customer order -  (UC2)\\
+\begin{small}
+	User selects menu item to add to the current order, the system then updates the current order to include the new item and updates total price. This action will occur every time an item is added to the current order eg. Chips are added to the current order. This action will need to occur instantly so that the user can keep track of the current order and as the customer will be unwilling to spend a long time placing their order. The system will always display the correct items in the current order and will always complete this action immediately. \\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR5} Remove Item from customer order -  (UC3)\\
+\begin{small}
+	User selects a menu item that is in the current order which is to be removed,  the system then updates the current order to exclude the selected item and update total price. This action will occur every time an item is removed from  the current order eg. Chips are removed from  the current order. This action will need to occur instantly so that the user can keep track of the current order and as the customer will be unwilling to spend a long time placing their order. The system will always display the correct items in the current order and will always complete this action immediately.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR6} Place order - (UC23)\\
+\begin{small}
+	User receives correct payment for the current order and moves order list into production queue. This action will occur every time a payment is received. This action will need to occur instantly so that the preparation of the items in the current order can begin. The system will only move order list into production queue once correct payment is received and will always complete this action immediately. To be implemented into the system before 24/09/19.
+	High, to be done before second deliverable.\\
+\end{small}
+\linebreak
+
+
+
+
+
+
+\noindent \textbf{FR7} - Cancel Order (UC4)\\
+\begin{small}
+	User selects cancel order, if the current order is not empty then items in current order are removed. This action will occur every time the cancel order button is pressed and will need to occur instantly so that the next order can begin. The system will only clear the current order if there are items to be cleared and will always complete this action immediately.\\
+\end{small}
+\linebreak
+\pagebreak
+
+\noindent \textbf{FR8} - Refund Order (UC5)\\
+\begin{small}
+	User selects a previous order from list and selects refund. The user then optionally types in a description and can select which order items to refund cost for or reorder. The system then either displays change for user to give to the customer or resends order to production queue. This action will occur every time someone returns an order and will need to occur instantly so that change can be given to the customer or the preparation of the items can begin. The system will always give correct change, only perform the task selected and will always complete this action immediately.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR9} - Special Order Change Ingredients (UC6)\\
+\begin{small}
+	User selects menu item and selects to add or subtract ingredient quantities and then confirms. The system then adds menu item to order list with selected changes. The system also modifies price of item based on changes. (This should be configurable). This action will occur every time a customer has a special request and will need to occur instantly so that the preparation of the items can begin. The system will always display the correct item adjustments and  will always complete this action immediately.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR10} - Special Order add ingredients (UC6)\\
+\begin{small}
+	User selects menu item and selects to add new ingredients. The user then selects an item from ingredient list, The user can then continue with FR8. The system then adds ingredients to custom order. This action will occur every time a customer has a special request and will need to occur instantly so that the preparation of the items can begin. The system will always display the correct item adjustments and  will always complete this action immediately.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR11} - Add ingredients to system (UC24)\\
+\begin{small}
+	User selects to add an ingredient. The user can then name, describe and tick properties of the ingredient. The user then clicks to add to the list of ingredients. The system then saves the ingredient type information into the complete ingredient list for the user. This action will occur every time new ingredients arrive. The system should complete this task within one second so that more ingredients can be added or other tasks can be completed. The system will always update with the correct information and will always complete within one second. \\
+\end{small}
+\linebreak
+
+
+
+\noindent \textbf{FR12} - Create a menu (UC7)\\
+\begin{small}
+	User selects to create a new menu, the user can name, describe the menu. The user then clicks confirm. The system then save the menu type information into the complete menu list for the user. This action will occur every time the create menu button is pressed. The system should complete the task within one second so that the new menu can be used. The system will always save the new menu with all the correct information and will always complete within one second.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR13} - View Menu Items (UC21)\\
+\begin{small}
+	The User selects a menu from list. The system then presents the Menu details and a list of menu items from the menu’s item list. This action will occur every time a menu item needs to be viewed and should be completed instantly so that the actions the user wishes to perform can be carried out. The system will always display the correct menu items and complete this action instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR14} - Add Menu Item (UC8)\\
+\begin{small}
+	The user selects a menu from list. The user then selects to add a new menu item. The user then selects an item from a list of recipes. The user can then select a markup/price for the menu item and name and select confirm. The system then adds menu item to menu’s item list with details. This action will occur every time a new item needs to be added to an existing menu. The system should complete the task within one second so that the updated menu can be used. The system will always save the updated menu with all the correct information and will always complete within one second.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR15} - Edit Menu Item (UC10)\\
+\begin{small}
+	The user selects a menu from the list and then selects a menu item from the list. The user can then modify the menu items details and confirm. The system then updates the details of the menu item in the item list. This action will occur every time an existing menu item needs to be adjusted. The system should complete the task within one second so that the updated menu can be used. The system will always save the updated menu item with all the correct information and will always complete within one second.\\
+\end{small}
+\linebreak
+
+\pagebreak
+
+\noindent \textbf{FR16} - Add Recipe (UC11)\\
+\begin{small}
+	The user selects to add a recipe and is brought to a recipe dialog. The user can then add ingredients and item details. The system then adds recipe to users complete recipe list. This action will occur every time a new recipe for an existing menu item is created. The system should complete the task within one second so that the new recipe can be used. The system will always save the new recipe with all the correct information and will always complete within one second.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR17} - List Recipes (UC13)\\
+\begin{small}
+	The user selects to list profile recipes. The system then presents the complete recipe list. This action occurs every time a recipe is required. This should be completed instantly so that the desired recipe can be used. The system will always display an accurate list of all recipes in the system and complete instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR18} - Edit Recipe (UC31)\\
+\begin{small}
+	The user selects lists recipes and then selects a recipe to edit. The system presents the recipe dialog. The user can then modify the recipe details. The system then saves the changes to the complete recipe list. This action will occur every time a recipe needs to be adjusted. The system should complete this task within one second so that the updated recipe can be used. The system will always update the recipe with all the correct information and complete within one second.\\
+\end{small}
+\linebreak
+
+
+
+\noindent \textbf{FR19} - Add Stock (UC14)\\
+\begin{small}
+	The user selects list ingredients then selects an ingredient and selects add stock. The user can then specify the quantity and the expiry date and confirm. The system then adds stock for the ingredient to the total stock list for the profile. This action occurs every time new stock arrives.The system should complete this task within one second so that an accurate representation of the current level of stock is maintained within the system. The system will always update the inventory with all the correct information and complete within one second.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR20} - List Stock (UC16)\\
+\begin{small}
+	The user selects list ingredients then selects an ingredient and selects view stock. The system then presents the stock list for the ingredient to the user. This action occurs every time the user needs information about the current level of stock. This action should complete instantly so that the information gained from this action can be used. The system will always display the correct stock items and complete instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR21} - Update Stock (UC15)\\
+\begin{small}
+	The user selects list ingredients then selects an ingredient and selects view stock. From there the user can change the quantity or completely remove stock. The system then updates values in the complete stock list. This action occurs every time any change to the stock occurs. This action should complete within one second so that an accurate representation of the current level of stock is maintained within the system. The system will always update with all the correct information and complete within one second.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR22} - Check Sales (UC17, UC22)\\
+\begin{small}
+	The user selects view sales. The system then presents a list of all orders and refunds with profits and losses for the current day. The user can select different days to view. This action occurs every time the user needs to get information about the sales on any given day. This should be completed instantly so that the information gained can then be used. The system will always display the correct sales information and complete instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR23} - Generate sales report (UC18)\\
+\begin{small}
+	The user selects view sales and then selects analytics. The system then presents a graph of profits per hour over the current day. The user can select a longer period or different metrics to display, such as sales, gross figures or most popular items. This action occurs when the user needs a formal representation of company sales. The system should complete the action within one minute so that the report can then be printed and used. The system will always display accurate sales information and complete within one minute.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR24} - Adjust menu price (UC19)\\
+\begin{small}
+	User completes FR14 adjusting menu item price. This action will occur every time the price of a menu item needs to be adjusted. The system should complete this action instantly so that the menu with the updated prices can be used. The system will always display the updated menu with the correct information and complete instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR25} - Save Menu (UC20)\\
+\begin{small}
+	User selects export a menu from menu list and then selects save to external file. The user then selects a name and location and confirms. The system then serializes menu data into an xml file as well as any other dependent information about menu items or ingredients. This action occurs every time a menu needs to be displayed physically ie not digitally or used in a different system. The system should complete this action instantly so that the menu can be printed and or used elsewhere. The system will always save an accurate copy of the menu and will always complete instantly.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR26} - Load Menu (UC21)\\
+\begin{small}
+	User selects import a menu and then selects an xml file location. The system then verifies the xml file is of valid format and then loads relevant information into data tables. The system ignores duplicate information. This action will occur every time that a new menu needs to be uploaded to the system. The system should complete this action within three seconds so that the new menu can be used. The system will always load an accurate copy of the menu and will always complete within three seconds.\\
+\end{small}
+\linebreak
+
+\noindent \textbf{FR27} - Edit Variant (UC6)\\
+\begin{small}
+	User selects item in customer order and can change type to similar variant. System then replaces order item with variant item. This action occurs every time the customer would like to change the type of an item eg regular bun to vegan bun. The system should complete this action instantly so that the user can keep track of the current order and as the customer will be unwilling to wait a long time to complete their order. The system will always add the correct items into the current order and will always complete instantly.\\
+\end{small}
+\linebreak
+
+\subsection{Functional Requirements Post-Mortem}
+The original functional requirements were originally chosen by taking a use case and from it decipher the features that would be needed to acommodate it in the system. These were decided via brainstorming as a team.
+This format for functional requirements was minimally useful and lead to this section being frequently ignored. After taking in previous feedback but being near the end of the project, we have developed some example remade functional requirements as
+how we would redo them if we were to do this project again. \\
+\linebreak
+The following functional requirements are ordered by priority and to be completed in order before due date.\\
+
+\noindent \textbf{FR4} - Add Item to customer order (UC21)\\
+\begin{small}
+	Menu items can be added to customer cart.\\
+\end{small}
+
+\noindent \textbf{FR27} - Edit Variant (UC21)\\
+\begin{small}
+	Ordered items can be swaped for similar types of items.\\
+\end{small}
+
+\noindent \textbf{FR23} - Generate sales report (UC21)\\
+\begin{small}
+	User can export their data into a viewable \\ document.
+\end{small}

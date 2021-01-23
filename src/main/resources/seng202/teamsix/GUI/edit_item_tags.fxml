@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="592.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane hgap="5.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="67.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="133.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="-Infinity" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="1.7976931348623157E308" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="titleLbl" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Edit Tags" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Tag Name" GridPane.rowIndex="4" />
+                <TextField fx:id="tagNameInput" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label fx:id="errorLabel" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" textFill="RED" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                    <children>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#done" prefHeight="30.0" prefWidth="205.0" text="Done" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            <Label fx:id="titleLbl2" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Add Tag" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#addTag" prefHeight="30.0" prefWidth="50.0" text="Add" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            </children>
+        </GridPane>
+        <TableView fx:id="itemTagTable" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</HBox>

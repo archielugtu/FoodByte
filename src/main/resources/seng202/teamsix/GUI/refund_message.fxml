@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="refundTitleLbl" alignment="CENTER" layoutY="27.0" prefHeight="28.0" prefWidth="308.0" text="Refund Successful!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="refundAmountLbl" alignment="CENTER" layoutX="6.0" layoutY="71.0" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="302.0" text="To be refunded: $$$" textAlignment="CENTER" />
+      <Button layoutX="122.0" layoutY="111.0" mnemonicParsing="false" onAction="#OK" prefHeight="26.0" prefWidth="62.0" text="OK" />
+   </children>
+</AnchorPane>

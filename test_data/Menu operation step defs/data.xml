@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item_map/>
+    <item_tag_map/>
+    <menu_map>
+        <entry>
+            <key uuid="d587697d-0391-4efc-9152-ad936937b51d"/>
+            <value uuid="d587697d-0391-4efc-9152-ad936937b51d">
+                <menuitem_list>
+                    <menuitem/>
+                </menuitem_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="31539fbc-32a3-42d6-99f0-cc78488a6558"/>
+            <value uuid="31539fbc-32a3-42d6-99f0-cc78488a6558">
+                <menuitem_list>
+                    <menuitem/>
+                </menuitem_list>
+            </value>
+        </entry>
+    </menu_map>
+    <order_map/>
+    <stock_instance_map/>
+</data>

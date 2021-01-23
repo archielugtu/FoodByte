@@ -1,0 +1,12 @@
+junit:
+  stage: test
+  script:
+  - mvn -B clean test
+  - cat target/site/jacoco/index.html
+generate_artifacts:
+  stage: deploy
+  script:
+  - mvn -B clean site package
+  artifacts:
+    paths:
+    - target/FoodByte*.jargit

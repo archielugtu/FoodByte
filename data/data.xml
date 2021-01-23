@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item_map>
+        <entry>
+            <key uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+            <value uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8">
+                <name>chips</name>
+                <description></description>
+                <base_price cents="100"/>
+                <markup_price cents="350"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+    </item_map>
+    <item_tag_map/>
+    <menu_map>
+        <entry>
+            <key uuid="8ad94444-b951-430e-b96d-8cc4a8e8f7d5"/>
+            <value uuid="8ad94444-b951-430e-b96d-8cc4a8e8f7d5">
+                <menuitem_list>
+                    <menuitem>
+                        <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                        <name>chips</name>
+                        <description></description>
+                        <colour>3319890</colour>
+                        <price cents="350"/>
+                    </menuitem>
+                </menuitem_list>
+                <name>Lunch</name>
+                <description></description>
+            </value>
+        </entry>
+    </menu_map>
+    <order_map>
+        <entry>
+            <key uuid="5a37a4d3-9dd0-4a6c-8760-d04dbd416190"/>
+            <value uuid="5a37a4d3-9dd0-4a6c-8760-d04dbd416190">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T13:42:13.002+13:00</timestamp>
+                <total_cost cents="1750"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+    </order_map>
+    <stock_instance_map>
+        <entry>
+            <key uuid="28004c11-ae45-4054-9ef3-ae69a6b9ea5a"/>
+            <value uuid="28004c11-ae45-4054-9ef3-ae69a6b9ea5a">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="576cc57f-6f37-40a3-bd6f-3550c0a66ea8">
+                    <name>chips</name>
+                    <description></description>
+                    <base_price cents="100"/>
+                    <markup_price cents="350"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T13:41:31.348+13:00</date_added>
+                <date_expires>2019-10-16T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>0.0</quantity_remaining>
+                <hidden>true</hidden>
+            </value>
+        </entry>
+    </stock_instance_map>
+    <cashRegister>
+        <registerAmount cents="2000000000"/>
+    </cashRegister>
+</data>

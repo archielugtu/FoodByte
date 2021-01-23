@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item_map>
+        <entry>
+            <key uuid="59789338-87c0-4364-80b9-6d12432b52ad"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="59789338-87c0-4364-80b9-6d12432b52ad">
+                <name>Soy milk</name>
+                <description></description>
+                <base_price cents="400"/>
+                <markup_price cents="500"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>L</qty_unit>
+                <variant_list>
+                    <variant uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1"/>
+                </variant_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3"/>
+            <value uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3">
+                <name>Beef mince</name>
+                <description>Meat used for patties</description>
+                <base_price cents="1200"/>
+                <markup_price cents="1500"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>KG</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="3f86daa6-9854-4055-a036-107571f9fb1d"/>
+            <value uuid="3f86daa6-9854-4055-a036-107571f9fb1d">
+                <name>Coke can</name>
+                <description></description>
+                <base_price cents="150"/>
+                <markup_price cents="300"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="c2fbd3c6-5828-4d8d-b928-2c122427e16a"/>
+            <value uuid="c2fbd3c6-5828-4d8d-b928-2c122427e16a">
+                <name>Lettuce</name>
+                <description>Fresh, crisp iceberg lettuce</description>
+                <base_price cents="150"/>
+                <markup_price cents="200"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>KG</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981"/>
+            <value uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981">
+                <name>Orange juice</name>
+                <description></description>
+                <base_price cents="200"/>
+                <markup_price cents="400"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+            <value uuid="70631440-1687-4290-91eb-f0e2e88a42b1">
+                <name>Bread bun</name>
+                <description>Basic bread bun</description>
+                <base_price cents="20"/>
+                <markup_price cents="50"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="e58a8227-9f36-4214-81b6-1f051d295785"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="e58a8227-9f36-4214-81b6-1f051d295785">
+                <name>Gluten free bun</name>
+                <description>Gluten free variant of the standard bread bun</description>
+                <base_price cents="40"/>
+                <markup_price cents="60"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <variant_list>
+                    <variant uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+                </variant_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="41a8da53-30bf-499c-b9d2-f71d4dcdcda0"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="41a8da53-30bf-499c-b9d2-f71d4dcdcda0">
+                <name>Delux cheese burger</name>
+                <description>Rich, succulent beef patty in a bread bun with cheese, lettuce and tomato</description>
+                <base_price cents="500"/>
+                <markup_price cents="800"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+                    <item uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+                    <item uuid="86ba576c-9149-44a5-b944-2e40beccbf30"/>
+                    <item uuid="c2fbd3c6-5828-4d8d-b928-2c122427e16a"/>
+                    <item uuid="c75c4d2a-1d14-4f1a-ae6d-6d0d0c8feafd"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="10564b87-65a8-4741-817c-a3b8debeb3b8"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="10564b87-65a8-4741-817c-a3b8debeb3b8">
+                <name>Best combo somewhere</name>
+                <description></description>
+                <base_price cents="800"/>
+                <markup_price cents="1500"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="41a8da53-30bf-499c-b9d2-f71d4dcdcda0"/>
+                    <item uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+                    <item uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="86ba576c-9149-44a5-b944-2e40beccbf30"/>
+            <value uuid="86ba576c-9149-44a5-b944-2e40beccbf30">
+                <name>Cheese slice</name>
+                <description>High quality chedder</description>
+                <base_price cents="20"/>
+                <markup_price cents="50"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888">
+                <name>Beef patty</name>
+                <description>Beef patty formed from beef mince</description>
+                <base_price cents="30"/>
+                <markup_price cents="50"/>
+                <recipe>
+                    <method>Formed using ~200g beef mince then grilled to medium rare</method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1"/>
+            <value uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1">
+                <name>Milk</name>
+                <description></description>
+                <base_price cents="200"/>
+                <markup_price cents="300"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>L</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="516e1a26-7100-4346-b5bd-5b223af251a0"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="516e1a26-7100-4346-b5bd-5b223af251a0">
+                <name>Coffee</name>
+                <description></description>
+                <base_price cents="200"/>
+                <markup_price cents="300"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="5d739b92-dbd0-43e5-ae1b-bfce105cf35c"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="compositeItem" uuid="5d739b92-dbd0-43e5-ae1b-bfce105cf35c">
+                <name>Basic Burger</name>
+                <description>Meat and bread. That's it</description>
+                <base_price cents="300"/>
+                <markup_price cents="400"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+                <composite_item_list>
+                    <item uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+                    <item uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+                </composite_item_list>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff"/>
+            <value uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff">
+                <name>Sprite can</name>
+                <description></description>
+                <base_price cents="150"/>
+                <markup_price cents="300"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+            <value uuid="4397b835-d98f-4282-a3f3-99757eeec63b">
+                <name>Fries</name>
+                <description></description>
+                <base_price cents="100"/>
+                <markup_price cents="300"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>KG</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="c75c4d2a-1d14-4f1a-ae6d-6d0d0c8feafd"/>
+            <value uuid="c75c4d2a-1d14-4f1a-ae6d-6d0d0c8feafd">
+                <name>Tomato</name>
+                <description>Fresh juicy tomatos</description>
+                <base_price cents="500"/>
+                <markup_price cents="800"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>KG</qty_unit>
+            </value>
+        </entry>
+    </item_map>
+    <item_tag_map/>
+    <menu_map>
+        <entry>
+            <key uuid="c119f006-68c3-4986-b784-a46670acd333"/>
+            <value uuid="c119f006-68c3-4986-b784-a46670acd333">
+                <menuitem_list>
+                    <menuitem>
+                        <item uuid="3f86daa6-9854-4055-a036-107571f9fb1d"/>
+                        <name>Coke can</name>
+                        <description></description>
+                        <colour>2970813</colour>
+                        <price cents="300"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981"/>
+                        <name>Orange juice</name>
+                        <description></description>
+                        <colour>2970813</colour>
+                        <price cents="400"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff"/>
+                        <name>Sprite can</name>
+                        <description></description>
+                        <colour>2970813</colour>
+                        <price cents="300"/>
+                    </menuitem>
+                </menuitem_list>
+                <name>Drinks</name>
+                <description>Drink menu</description>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="a625aead-3dc6-459e-8349-a2ee798bd5dd"/>
+            <value uuid="a625aead-3dc6-459e-8349-a2ee798bd5dd">
+                <menuitem_list>
+                    <menuitem>
+                        <item uuid="5d739b92-dbd0-43e5-ae1b-bfce105cf35c"/>
+                        <name>Basic Burger</name>
+                        <description></description>
+                        <colour>10246180</colour>
+                        <price cents="400"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+                        <name>Fries</name>
+                        <description></description>
+                        <colour>11022898</colour>
+                        <price cents="350"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="10564b87-65a8-4741-817c-a3b8debeb3b8"/>
+                        <name>Best combo somewhere</name>
+                        <description></description>
+                        <colour>11022898</colour>
+                        <price cents="1500"/>
+                    </menuitem>
+                    <menuitem>
+                        <item uuid="41a8da53-30bf-499c-b9d2-f71d4dcdcda0"/>
+                        <name>Delux cheese burger</name>
+                        <description></description>
+                        <colour>13187762</colour>
+                        <price cents="800"/>
+                    </menuitem>
+                </menuitem_list>
+                <name>Mains</name>
+                <description>Meals and such</description>
+            </value>
+        </entry>
+    </menu_map>
+    <order_map>
+        <entry>
+            <key uuid="33a8ed20-b97a-4007-8d51-ade3509ddb05"/>
+            <value uuid="33a8ed20-b97a-4007-8d51-ade3509ddb05">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="41a8da53-30bf-499c-b9d2-f71d4dcdcda0"/>
+                            <dependants>
+<order_item>
+    <item uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+    <dependants>
+        <order_item>
+            <item uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3"/>
+            <dependants/>
+            <quantity>1</quantity>
+        </order_item>
+    </dependants>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="86ba576c-9149-44a5-b944-2e40beccbf30"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="c2fbd3c6-5828-4d8d-b928-2c122427e16a"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="c75c4d2a-1d14-4f1a-ae6d-6d0d0c8feafd"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+                            </dependants>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T10:06:57.535+13:00</timestamp>
+                <total_cost cents="1100"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="447cc62a-7a08-43bc-b56c-f0dade8d584c"/>
+            <value uuid="447cc62a-7a08-43bc-b56c-f0dade8d584c">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T12:11:43.642+13:00</timestamp>
+                <total_cost cents="300"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="03292478-c529-4c42-969c-118b20d034bc"/>
+            <value uuid="03292478-c529-4c42-969c-118b20d034bc">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T12:29:22.145+13:00</timestamp>
+                <total_cost cents="350"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="a8510e3e-2c20-49e6-bf2d-1ca384f57e7b"/>
+            <value uuid="a8510e3e-2c20-49e6-bf2d-1ca384f57e7b">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T12:31:09.649+13:00</timestamp>
+                <total_cost cents="350"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="03e2364c-3c84-4a57-8234-8663dc01d618"/>
+            <value uuid="03e2364c-3c84-4a57-8234-8663dc01d618">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T12:17:59.278+13:00</timestamp>
+                <total_cost cents="400"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="6f1297fe-24ff-4f59-9f63-032d713e6842"/>
+            <value uuid="6f1297fe-24ff-4f59-9f63-032d713e6842">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="4397b835-d98f-4282-a3f3-99757eeec63b"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T12:32:56.478+13:00</timestamp>
+                <total_cost cents="350"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="ba1be7e8-e86a-4ffe-a906-a3c5f915174d"/>
+            <value uuid="ba1be7e8-e86a-4ffe-a906-a3c5f915174d">
+                <order_tree>
+                    <dependants>
+                        <order_item>
+                            <item uuid="5d739b92-dbd0-43e5-ae1b-bfce105cf35c"/>
+                            <dependants>
+<order_item>
+    <item uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+    <dependants>
+        <order_item>
+            <item uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3"/>
+            <dependants/>
+            <quantity>1</quantity>
+        </order_item>
+    </dependants>
+    <quantity>1</quantity>
+</order_item>
+                            </dependants>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="5d739b92-dbd0-43e5-ae1b-bfce105cf35c"/>
+                            <dependants>
+<order_item>
+    <item uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+    <dependants/>
+    <quantity>1</quantity>
+</order_item>
+<order_item>
+    <item uuid="f3ad5085-e58c-4870-8cd4-1c233da7c888"/>
+    <dependants>
+        <order_item>
+            <item uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3"/>
+            <dependants/>
+            <quantity>1</quantity>
+        </order_item>
+    </dependants>
+    <quantity>1</quantity>
+</order_item>
+                            </dependants>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="3f86daa6-9854-4055-a036-107571f9fb1d"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                        <order_item>
+                            <item uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981"/>
+                            <dependants/>
+                            <quantity>1</quantity>
+                        </order_item>
+                    </dependants>
+                    <quantity>0</quantity>
+                </order_tree>
+                <timestamp>2019-10-14T10:07:24.765+13:00</timestamp>
+                <total_cost cents="1500"/>
+                <isRefunded>false</isRefunded>
+                <is_eftpos>false</is_eftpos>
+            </value>
+        </entry>
+    </order_map>
+    <stock_instance_map>
+        <entry>
+            <key uuid="8aa09386-8008-4e77-b677-dace2f09bba6"/>
+            <value uuid="8aa09386-8008-4e77-b677-dace2f09bba6">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="3f86daa6-9854-4055-a036-107571f9fb1d">
+                    <name>Coke can</name>
+                    <description></description>
+                    <base_price cents="150"/>
+                    <markup_price cents="300"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:02:38.081+13:00</date_added>
+                <does_expire>false</does_expire>
+                <quantity_remaining>100.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="29ab06b0-1dab-41bd-a09d-b032db34ccb6"/>
+            <value uuid="29ab06b0-1dab-41bd-a09d-b032db34ccb6">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="86ba576c-9149-44a5-b944-2e40beccbf30">
+                    <name>Cheese slice</name>
+                    <description>High quality chedder</description>
+                    <base_price cents="20"/>
+                    <markup_price cents="50"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:02:23.913+13:00</date_added>
+                <date_expires>2019-11-11T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>999.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="f6cff31d-39c0-4096-bfeb-5b1c6bdfb0bc"/>
+            <value uuid="f6cff31d-39c0-4096-bfeb-5b1c6bdfb0bc">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="e58a8227-9f36-4214-81b6-1f051d295785">
+                    <name>Gluten free bun</name>
+                    <description>Gluten free variant of the standard bread bun</description>
+                    <base_price cents="40"/>
+                    <markup_price cents="60"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                    <variant_list>
+                        <variant uuid="70631440-1687-4290-91eb-f0e2e88a42b1"/>
+                    </variant_list>
+                </stock_item>
+                <date_added>2019-10-14T10:03:16.174+13:00</date_added>
+                <date_expires>2019-11-04T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>50.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="7d36592e-27a3-40cf-9fd8-bb477d76afdf"/>
+            <value uuid="7d36592e-27a3-40cf-9fd8-bb477d76afdf">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="variantItem" uuid="59789338-87c0-4364-80b9-6d12432b52ad">
+                    <name>Soy milk</name>
+                    <description></description>
+                    <base_price cents="400"/>
+                    <markup_price cents="500"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>L</qty_unit>
+                    <variant_list>
+                        <variant uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1"/>
+                    </variant_list>
+                </stock_item>
+                <date_added>2019-10-14T10:04:39.122+13:00</date_added>
+                <does_expire>false</does_expire>
+                <quantity_remaining>3.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="7c69305f-d109-4f27-b33e-fddd01d15bea"/>
+            <value uuid="7c69305f-d109-4f27-b33e-fddd01d15bea">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="eab7dba2-8293-46b1-b6d2-0847f76527ff">
+                    <name>Sprite can</name>
+                    <description></description>
+                    <base_price cents="150"/>
+                    <markup_price cents="300"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:04:49.135+13:00</date_added>
+                <does_expire>false</does_expire>
+                <quantity_remaining>98.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8a633360-291a-4dfc-b5f4-6545e3a8efd6"/>
+            <value uuid="8a633360-291a-4dfc-b5f4-6545e3a8efd6">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="c75c4d2a-1d14-4f1a-ae6d-6d0d0c8feafd">
+                    <name>Tomato</name>
+                    <description>Fresh juicy tomatos</description>
+                    <base_price cents="500"/>
+                    <markup_price cents="800"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>KG</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:05:10.167+13:00</date_added>
+                <date_expires>2019-10-28T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>68.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="94d72f4c-ca4e-4ac9-8228-538dd954f9ba"/>
+            <value uuid="94d72f4c-ca4e-4ac9-8228-538dd954f9ba">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="87b2c41f-6f43-4c12-8e70-b1a6388416e1">
+                    <name>Milk</name>
+                    <description></description>
+                    <base_price cents="200"/>
+                    <markup_price cents="300"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>L</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:04:00.612+13:00</date_added>
+                <date_expires>2019-10-28T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>5.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="bc5fa7d0-6f5c-4372-9166-2b0730d01be7"/>
+            <value uuid="bc5fa7d0-6f5c-4372-9166-2b0730d01be7">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="497e7e17-35e1-4fab-81c5-8aa2f723d981">
+                    <name>Orange juice</name>
+                    <description></description>
+                    <base_price cents="200"/>
+                    <markup_price cents="400"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:04:17.397+13:00</date_added>
+                <does_expire>false</does_expire>
+                <quantity_remaining>99.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="1781ea30-448d-4d03-9fc9-0a0854dc4189"/>
+            <value uuid="1781ea30-448d-4d03-9fc9-0a0854dc4189">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="c9a5dba6-5b2c-4c0e-aa6e-2d82746423c3">
+                    <name>Beef mince</name>
+                    <description>Meat used for patties</description>
+                    <base_price cents="1200"/>
+                    <markup_price cents="1500"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>KG</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:01:55.580+13:00</date_added>
+                <date_expires>2019-11-04T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>19.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="597a2a1b-2fa0-4015-83eb-4d15cf5f7ce1"/>
+            <value uuid="597a2a1b-2fa0-4015-83eb-4d15cf5f7ce1">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="70631440-1687-4290-91eb-f0e2e88a42b1">
+                    <name>Bread bun</name>
+                    <description>Basic bread bun</description>
+                    <base_price cents="20"/>
+                    <markup_price cents="50"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>NUM</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:02:10.266+13:00</date_added>
+                <date_expires>2019-10-28T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>99.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="3b7b71d8-e4b7-498e-b300-dac90a69cb4b"/>
+            <value uuid="3b7b71d8-e4b7-498e-b300-dac90a69cb4b">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="4397b835-d98f-4282-a3f3-99757eeec63b">
+                    <name>Fries</name>
+                    <description></description>
+                    <base_price cents="100"/>
+                    <markup_price cents="300"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>KG</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T12:29:14.138+13:00</date_added>
+                <date_expires>2019-12-02T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>497.0</quantity_remaining>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="98811bd8-1d4a-4311-b01a-051b604025c6"/>
+            <value uuid="98811bd8-1d4a-4311-b01a-051b604025c6">
+                <stock_item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="item" uuid="c2fbd3c6-5828-4d8d-b928-2c122427e16a">
+                    <name>Lettuce</name>
+                    <description>Fresh, crisp iceberg lettuce</description>
+                    <base_price cents="150"/>
+                    <markup_price cents="200"/>
+                    <recipe>
+                        <method></method>
+                    </recipe>
+                    <qty_unit>KG</qty_unit>
+                </stock_item>
+                <date_added>2019-10-14T10:03:35.673+13:00</date_added>
+                <date_expires>2019-10-28T00:00:00+13:00</date_expires>
+                <does_expire>true</does_expire>
+                <quantity_remaining>19.0</quantity_remaining>
+            </value>
+        </entry>
+    </stock_instance_map>
+    <cashRegister>
+        <registerAmount cents="21350"/>
+    </cashRegister>
+</data>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="370.0" prefWidth="543.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="543.0" style="-fx-background-color: #576574; -fx-border-color: #000000; -fx-border-width: 3; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <AnchorPane layoutX="30.0" layoutY="11.0" prefHeight="348.0" prefWidth="484.0" style="-fx-background-color: #c8d6e5; -fx-background-radius: 10;" />
+            <Label alignment="CENTER" layoutX="45.0" layoutY="22.0" prefHeight="129.0" prefWidth="454.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" text="Change due:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="changeDueField" alignment="CENTER" layoutX="45.0" layoutY="139.0" prefHeight="129.0" prefWidth="454.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" text="Label">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="45.0" layoutY="282.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#close_change" prefHeight="66.0" prefWidth="454.0" style="-fx-background-color: #2cFF02; -fx-background-radius: 10; -fx-font-size: 24;" text="Okay" wrapText="true">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <item_map>
+        <entry>
+            <key uuid="e9130378-6247-490e-918a-3cae9b2f16c4"/>
+            <value uuid="e9130378-6247-490e-918a-3cae9b2f16c4">
+                <name>Apple</name>
+                <description>Juicy and red</description>
+                <base_price dollars="1" cents="17"/>
+                <markup_price dollars="1" cents="99"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="c5ca2bb3-9387-4b91-8a93-5c568c1b8b4e"/>
+            <value uuid="c5ca2bb3-9387-4b91-8a93-5c568c1b8b4e">
+                <name>Bannana</name>
+                <description>Mellow yellow</description>
+                <base_price dollars="0" cents="57"/>
+                <markup_price dollars="10" cents="0"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="8fd4e2b5-4b71-45ee-a66d-83734c577fef"/>
+            <value uuid="8fd4e2b5-4b71-45ee-a66d-83734c577fef">
+                <name>Tomato Sauce</name>
+                <description>Pride of NZ</description>
+                <base_price dollars="3" cents="00"/>
+                <markup_price dollars="3" cents="25"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>L</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="9233038c-9700-42bd-b5c7-2d42445e2caa"/>
+            <value uuid="9233038c-9700-42bd-b5c7-2d42445e2caa">
+                <name>Bread Bun</name>
+                <description>Delicious carbs</description>
+                <base_price dollars="0" cents="20"/>
+                <markup_price dollars="0" cents="50"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="43de748c-dc28-47aa-aaa3-0548ff23f3ab"/>
+            <value uuid="43de748c-dc28-47aa-aaa3-0548ff23f3ab">
+                <name>Meat patty</name>
+                <description>Juicy and budget priced</description>
+                <base_price dollars="0" cents="68"/>
+                <markup_price dollars="0" cents="99"/>
+                <recipe>
+                    <method></method>
+                </recipe>
+                <qty_unit>NUM</qty_unit>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="96dcfdaf-97eb-4498-a31a-c82b0f9f7cc0"/>
+            <value uuid="96dcfdaf-97eb-4498-a31a-c82b0f9f7cc0">
+                <name>Cheese Slice</name>
+                <description>yum</description>
+                <base_price dollars="0" cents="10"/>
+                <markup_price dollars="0" cents="20"/>
+                <recipe>
+                    <method>Slice these from the block</method>
+                </recipe>
+                <qty_unit>KG</qty_unit>
+            </value>
+        </entry>
+    </item_map>
+    <item_tag_map>
+        <entry>
+            <key uuid="e1165932-b156-4982-a59c-1e24bfafa39a"/>
+            <value uuid="e1165932-b156-4982-a59c-1e24bfafa39a">
+                <name>Gluten Free</name>
+                <is_dominant>true</is_dominant>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="0b5a010e-15d0-4644-911f-28c652c756b1"/>
+            <value uuid="0b5a010e-15d0-4644-911f-28c652c756b1">
+                <name>Vegetarian</name>
+                <is_dominant>true</is_dominant>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="9678f4ab-85b8-43d4-918b-a78cdce1b52f"/>
+            <value uuid="9678f4ab-85b8-43d4-918b-a78cdce1b52f">
+                <name>Halal</name>
+                <is_dominant>true</is_dominant>
+            </value>
+        </entry>
+        <entry>
+            <key uuid="a44fb1b0-e643-49aa-a082-c6824f77879d"/>
+            <value uuid="a44fb1b0-e643-49aa-a082-c6824f77879d">
+                <name>Vegan</name>
+                <is_dominant>true</is_dominant>
+            </value>
+        </entry>
+    </item_tag_map>
+    <menu_map></menu_map>
+    <order_map></order_map>
+    <stock_instance_map></stock_instance_map>
+</data>

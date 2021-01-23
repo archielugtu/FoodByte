@@ -1,0 +1,73 @@
+FoodByte stores data within XML files, though it was planned to move to storing data within a database to handle larger data sets. The separate data layer of the system allows developers to switch from XML storage access to database storage access a lot simpler. Data required to be stored was constantly changing as we imlemented more features into the project.
+\\ \\
+\noindent Data Modelling is about modelling the data that would need to be stored for the FoodByte application to function to the user's expectation. This included the ability to store ingredients. Ingredients required to create the menu items are created as Stock Instance objects. To start, the application required the below attributes to go with each Stock Instance object.
+\\ \\
+\begin{tabularx}{\linewidth}{|X|X|X|}
+\hline
+\multicolumn{3}{c}{ Ingredients } \\
+\hline
+Attribute & Type & Notes \\
+\hline
+Ingredient ID & String & Unique identifier. \\
+\hline
+Name & String & The name of the Ingredient or item purchased from supplier. \\
+\hline
+Cost Price & Float & Dollar values stored. \\
+\hline
+Amount Purchased & Int / Float & User selects unit; KG, G, L, Quantity. \\
+\hline
+Expiry Date & Date &   \\
+\hline
+Is Gluten-Free & Boolean &  \\
+\hline
+Date Purchased & Date & Refer to date purchase was made or date payment went through. \\
+\hline
+Payment Type & String & E.g. Cash, Credit, or Eftpos. \\
+\hline
+\end{tabularx} 
+\\ \\ \\
+\noindent Data related to each Item that the food truck might sell would beed to have it's own class. These would be attributes belonging to a class Item, breaking down into a subclass FoodItem to handle dependants and variants, such as Buns with or without Semame Seeds.
+\\ \\
+\begin{tabularx}{\linewidth}{|X|X|X|}
+	\hline
+	\multicolumn{3}{c}{ Menu Item } \\
+	\hline
+	Attribute & Type & Notes \\
+	\hline
+	Item ID & String & Unique identifier. \\
+	\hline
+	Name & String & Name of item. \\
+	\hline
+	Ingredients: Quantity & Float & Composite Attribute Ingredients, quantity one of the attributes it can be broken down into. \\
+	\hline
+	Is Gluten-Free & Boolean &  \\
+	\hline
+	Description & String & Optional for food item. \\
+	\hline
+	Recipe & String & Instructions to make item. \\
+	\hline
+	Selling Price & Float &   \\
+	\hline
+\end{tabularx} 
+\\ \\ \\
+\noindent The way FoodByte stored data drastically changed throughout the implementation of the system. Items were created as Item objects. If stock were to be added, a Stock Instance object would be created and would include a reference to the Item of which stock was being added. If that Item were to be added to an order, an OrderItem object would be created which would hold a reference to the Item as well as it's associated attributes. This implementation helped with the addition of implementing custom orders, such as if a user wanted to purchase a gluten-free variant of a burger the employee could easily edit the item to include the gluten-free variant of the bun instead. This also helped with the implementation of the tree-structure to show items in the order. As represented in the customer receipts and chef order slips.
+\\ \\
+Initially, the idea was to keep track of customer transactions via Statements. A sum of the amounts received from each transaction could be easily derived to show the income each day. Attributes listed below would represent customer transactions.
+\\ \\
+\begin{tabularx}{\linewidth}{|X|X|X|}
+	\hline
+	\multicolumn{3}{c}{ Statement } \\
+	\hline
+	Attribute & Type & Notes \\
+	\hline
+	Statement Number & Int & Unique identifier. Reset each day. \\
+	\hline
+	Amount Received & Float & Dollar value received stored here. \\
+	\hline
+	Payment Type & String & E.g. Cash, Eftpos, or Credit. \\
+	\hline
+	Items Purchased & ArrayList<Item> & List storing references to each item added to the order. \\
+	\hline
+\end{tabularx} 
+\\ \\ \\
+Later it was decided that this information would still be stored but within each order. This enabled the application to show past order transactions which included the date and the total cost of the order, with the ability to perform a refund or cancel a refund if the button was accidentally clicked. With more time, this could also be modified simply to show the tree structure of the order.

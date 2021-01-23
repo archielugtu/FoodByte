@@ -1,0 +1,116 @@
+The risk assessment module analyzes a number of different risks that both the team as well as the operator (user of the software) must be aware of during development and use of the software. Each risk is analyzed by multiplying its likelihood of occurring by the impact of the consequences on the group/user. This allows (low-likelihood, high impact) risks to be compared to (high-likelihood, low impact) risks. Most importantly, the last column of the table indicates how the risk can be avoided altogether, so this table should be referenced regularly.
+
+\subsection{Team Risks}
+
+\begin{table}[H]
+\centering
+\caption{Summary of exposure to risks to team that could occur in development}
+\begin{tabularx}{\linewidth}{|c|X|X|X|X|}
+	\hline
+    ID & Description & Likelihood(\%) & Impact (1 - 10) & Exposure L * I \\
+    \hline
+    R-01 & Team Conflict & 10\% & 1 & 0.1 \\
+    \hline
+    R-02 & Unfamiliar Development Tools & 20\% & 2 & 0.4 \\
+    \hline
+    R-03 & Unfamiliar APIs/ libraries, various programming skill levels & 90\% & 5 & 4.5 \\
+    \hline
+    R-04 & Miscommunication with lecturers & 80\% & 5 & 4 \\
+    \hline
+    R-05 & Loss of data, problem with import of data & 20\% & 6 & 1.2 \\
+    \hline
+    R-06 & Product does not agree with stakeholders expectations & 90\% & 10 & 9 \\
+    \hline
+    R-07 & Code written by individual team members not readable by others & 70\% & 4 & 2.8 \\
+    \hline
+    R-08 & GitLab, Google Drive, etc. become unavailable & 2\% & 7 & 0.14 \\
+    \hline
+    R-09 & No Internet & 5\% & 6 & 0.3 \\
+    \hline
+    R-11 & Bug in software e.g. bug says something gluten free when actually it isn’t & 90\% & 10 & 9 \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Summary of consequences to risks to team that could occur in development}
+\begin{tabularx}{\linewidth}{|c|X|X|X|X|}
+	\hline
+    ID & Description & Consequences & Justification of likelihood percentages & Prevention \\
+    \hline
+    R-01 & Team Conflict & Reduced Productivity & Team has rules in place to avoid conflict. & Don’t be mean, rude, etc \\
+    \hline
+    R-02 & Unfamiliar Development Tools & Reduced Productivity as time spent learning how to use dev tools & Members of the team have all been learning how to use the same development tools. & Use Dev Tools that majority are familiar with / easy to learn \\
+    \hline
+    R-03 & Unfamiliar APIs/ libraries, various programming skill levels & Some members limited to certain tasks, may mean some members have to do more work than others & This is the team's first project of this scale. Therefore there are many different API’s and libraries that members of the team are not familiar with. & Discuss what libraries may be used \\
+    \hline
+    R-04 & Miscommunication with lecturers & Doing tasks incorrectly and will have to redo or get a bad mark & The team has very little contact time with the lecture team. Therefore it is easy for a team member to hear and implement something different to what the lecturer was trying to say. & Make sure all team members attend lectures and labs \\
+    \hline
+    R-05 & Loss of data, problem with import of data & Have to re-complete work / manually import & All members of the team are familiar with Git, which will be used for version control. & Make sure dev tools are compatible with each other \\
+    \hline
+    R-06 & Product does not agree with stakeholders expectations & Software won’t sell (fake world) / bad mark from lecturers (real world) & It is very unlikely that the system will be able to be built to the stakeholders exact specifications and therefore constant communication between the team and the stakeholders is required to find some middle ground between what is possible and what is expected. & Make sure we have a balance of focussing on what the lecturers want compared to our stakeholders \\
+    \hline
+    R-07 & Code written by individual team members not readable by others & Reduced Productivity / Code has to be re-written & With new tools being used to create this system it is very likely that one team member does a lot of research in order to write a piece of code that cannot be understood by other team members. & Document and comment code to make it more readable / use good variable names \\
+    \hline
+    R-08 & GitLab, Google Drive, etc. become unavailable & Reduced Productivity, Can’t commit new changes, may have to switch platforms & These services are run by large companies and it is very unlikely for them to become unavailable. & Keep a running offline backup of the project \\
+    \hline
+    R-09 & No Internet & Can’t commit changes to GitLab & Internet is provided at many public places. It is very unlikely that no internet is available. & Come to Uni if you don’t have access to internet \\
+    \hline
+    R-11 & Bug in software e.g. bug says something gluten free when actually it isn’t & People could get sick & It is very unlikely that there will be no bugs during development. These bugs will need to be found and fixed before deployment. & Can be prevented with good UUID system \\
+    \hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{User Risks}
+
+\begin{table}[!ht]
+\centering
+\caption{Summary of exposure to risks to the user that could occur during and after development}
+\begin{tabularx}{\linewidth}{|c|X|X|X|X|}
+	\hline
+    ID & Description & Likelihood(\%) & Impact
+    1 - 10 & Exposure
+    L * I \\
+    \hline
+    R-10 & Human error (misuse of software) & 80\% & 9 & 7.2 \\
+    \hline
+    R-12 & Program freezes while processing customer’s orders & 20\% & 10 & 2 \\
+    \hline
+    R-13 & Screen showing the cooks what orders to make is inconsistent with actual order & 20\% & 10 & 2 \\
+    \hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\caption{Summary of consequences to risks to the user that could occur during and after development}
+\begin{tabularx}{\linewidth}{|c|X|X|X|X|}
+	\hline
+    ID & Description & Consequences & Justification of likelihood percentages & Prevention \\
+    \hline
+    R-10 & Human error (misuse of software) & People could get sick & It is very likely that a user makes a mistake as mistakes happen frequently no matter the task. & Popups (i.e. are you sure this is a gluten free item), allows the user to mend their mistake before it becomes an issue. \\
+    \hline
+    R-12 & Program freezes while processing customer’s orders & Angry customers lines get long, lose order & There is a low chance that the system will have a bug that will crash the system once it has been deployed. & Make sure program is stable, allow the user to perform a quick hard reset \\
+    \hline
+    R-13 & Screen showing the cooks what orders to make is inconsistent with actual order & Angry customers & There is a low chance that the system will have a bug with such an integral part of the system once it has been deployed. & Effective integration testing \\
+    \hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{Discussion}
+
+Based on the feedback from the 1st deliverable and the 2nd deliverable it was clear that the risks section was not as extensive as it should have been, and some of the values were not correct e.g. We had the likelihood of team members being unfamiliar with libraries at 30\% when really it should have been at 90\%. In hindsight, we should have had more than one person deciding on the values for the risk assessment module as it resulted in biased and less thought through values. However time constraints near the end of the deliverable didnt allow for this. Time management was something that definitely held our grade back in the 1st and 2nd deliverable and this is a clear example of that.
+
+For deliverable 2 we changed some of the likelihood values as you noticed and added a 'Justification of liklihood percentages' column too. Below are some examples of some of the risks we actually encountered and how they affected the development of the project.
+
+R-03 - Unfamiliar libraries: This became clear to us very early on in deliverable 2 when using libraries such as JavaFX. Not many members of the group were familiar with it to begin with, even after having completed the JavaFX Lab. This hindered development in some areas where basic GUI functionality actually took a lot longer than expected to get up and running without any bugs.
+
+R-02 - Unfamiliar development tools: Most members of the team had only used Eclipse from SENG201 for Java projects. Switching over from Eclipse to IntelliJ was hard for some members of the team as the Project and Module SDK settings were playing up, however once we got it working there were no more problems and we concluded that IntelliJ is a lot better than Eclipse.
+SceneBuilder was also very new for most people, Taran did a lot of the design work for our GUI, so he had to learn how to use it by himself but he got the hang of it pretty quickly and produced an appealing GUI.
+We used Google Drive to store all of our design documentation as everyone was familiar with it, however we eventually had to switch over to LaTeX which was a new development tool for all of us. As this switch happened towards the end of deliverable 3, in hindsight we should have used LaTeX from the beginning as it is better than Google Drive.
+
+R-08 GitLab, Google Drive, etc. become unavailable: We had the likelihood of this risk at 2\%, as it seemed so unlikely as the development tools we were using such as GitLab and Google Drive are run by large companies. We were proven wrong when Google Drive crashed on us. Our design doc was 60 pages and when we had seven people trying to edit it at once, it crashed. Hence we switched our design documentation over to LaTeX which was much more friendly and has much better formatting tools.
+Connor's laptop also crashed two days before deliverable 2 was due. This was unfortunate, however we mitigated its consequences by making sure we always met where there was a lab computer available for Connor to work on. Hamesh also had a spare laptop that he kindly lended to Connor when we had to meet where there were no lab machines.

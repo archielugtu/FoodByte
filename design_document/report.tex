@@ -1,0 +1,132 @@
+% Preamble
+\documentclass{article}
+
+% Packages
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{subfiles}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{ltxtable}
+\usepackage{xltabular}
+\usepackage{caption}
+\usepackage{float}
+\geometry{a4paper, margin=1.5cm}
+
+\usepackage{tabularx}
+
+% Document
+\begin{document}
+	\title{\includegraphics[width=8cm]{images/logo_main.png}\linebreak
+		   Team Six Deliverable Three}
+	\author{Andrew Clifford (19798632)
+		    \and Anzac Morel (66261880)
+	    	\and Connor Macdonald (41647584)
+    		\and George Stephenson (97277741)
+    		\and Hamesh Ravji (43832772)
+    		\and Rchi Lugtu (89933448)
+    		\and Taran Jennison (67420293)}
+	\maketitle
+	\pagebreak
+	\tableofcontents
+	\pagebreak
+	
+	\section{Executive Summary} 
+	\subfile{sections/exec_summary}
+	\pagebreak
+	
+	\section{Business and System Context}
+	\subfile{sections/business_context}
+	
+	\subsection{System Context}
+	\subfile{sections/system_context}
+	
+	\subsection{Relevant Business Information}
+	\subfile{sections/relevant_business_information}	
+	
+	\pagebreak
+	
+	\section{Stakeholders}
+	\subfile{sections/stakeholders}
+	\pagebreak
+	
+	\section{Use Cases}
+	\subfile{sections/use_cases}
+	\pagebreak
+	
+	\section{Functional Requirements}
+	\subfile{sections/functional_requirements}
+	\pagebreak
+	
+	\section{Quality Requirements}
+	\subfile{sections/quality_requirements}
+	\pagebreak
+	
+	\section{Acceptance Testing}
+	\subfile{sections/acceptance_testing}
+	\pagebreak
+	
+	\section{Deployment Model}
+	\subfile{sections/deployment_model}
+	\pagebreak
+	
+	\section{Data Modelling}
+	\subfile{sections/data_modeling}
+	\pagebreak
+	
+	\section{Technical Design}
+	\subfile{sections/technical_design}
+	\pagebreak
+	
+	\section{GUI}
+	\subsection{Prototypes}
+	\subfile{sections/gui_prototypes}
+	
+	\pagebreak
+	
+	\subsection{Development and Deployment}
+	\subfile{sections/gui_dev_deply}
+	
+	\pagebreak
+	
+	\section{Risks}
+	\subfile{sections/risks}
+	\pagebreak
+	
+	\section{Testing Protocol}
+	\subsection{Functional Testing Procedures}
+	\subfile{sections/functional_testing}
+	
+	\subsection{Quality Testing}
+	\subfile{sections/testing_protocol}
+	
+	\subsection{Discussion}
+	\subfile{sections/discussion_testing}
+	\pagebreak
+	
+
+	
+	\section{Project Timeline}
+	\subfile{sections/project_timeline}
+	\pagebreak
+	
+	\section{Lessons Learned}
+	\subfile{sections/lessons_learned}
+	\pagebreak
+	
+	\section{Document Changelog}
+	\subfile{sections/document_changelog}
+	\pagebreak
+	
+	\section{Project Description}
+	\subfile{sections/project_description}
+	\pagebreak
+	
+	\appendix
+	\addcontentsline{toc}{section}{Appendices}
+	\section*{Appendices}
+	\section{Class Diagram}
+\end{document}

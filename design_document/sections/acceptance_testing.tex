@@ -1,0 +1,117 @@
+This section outlines all the acceptance tests that were implemented into the system. This helps the team see if the system meets requirement specifications. Below are all acceptance tests written in the Gherkin test format. It was not possible to automate all the use cases and therefore not all of them were implemented as use cases. These use cases that were not able to be automated were instead tested manually.\\
+\\
+\textbf{AT1} - Add money to the cash register \\
+\begin{small}
+Given: \$200 in the cash register\\
+When: \$50 is added\\
+Then: There is now \$250 in the cash register\\
+\end{small}
+\linebreak
+\noindent \textbf{AT2} - Remove money from the cash register\\
+\begin{small}
+Given: \$200 in the cash register\\
+When: \$50 is removed\\
+Then: There is now \$150 in the cash register\\
+\end{small}
+\linebreak
+\textbf{AT3} - Too much money is removed from the cash register\\
+\begin{small}
+Given: \$30 in the cash register\\
+When: \$50 is removed\\
+Then: Error is thrown\\
+\end{small}
+\linebreak
+\textbf{AT4} - Add an item to the current order\\
+\begin{small}
+Given: One burger in the current order\\
+When: Chips are added to the current order\\
+Then:The current order now contains one burger and one chips\\
+\end{small}
+\linebreak
+\textbf{AT5} - Remove an item from the current order\\
+\begin{small}
+Given: One burger and one chips in the current order\\
+When: Chips are removed from the current order\\
+Then: The current order now contains one burger\\
+\end{small}
+\linebreak
+\textbf{AT6} - Cancel the current order\\
+\begin{small}
+Given: The current order contains one burger and one chips\\
+When: The order is cancelled\\
+Then: The current order is now empty\\
+\end{small}
+\linebreak
+\textbf{AT7} - Refund the total cost of an order\\
+\begin{small}
+Given: The cost of the order that is to be refunded was \$15 and there is \$50 in the cash register\\
+When: \$15 is removed from the cash register\\
+Then:\$35 in the cash register\\
+\end{small}
+\linebreak
+\textbf{AT8} - Add a new menu to the system\\
+\begin{small}
+Given: There are zero menus in the system\\
+When: New menu is added\\
+Then: There is one menu in the system\\
+\end{small}
+\linebreak
+\textbf{AT9} - Add an item to an existing menu\\
+\begin{small}
+Given: A menu contains zero items\\
+When: Burger is added to the menu\\
+Then: Menu contains one item, Burger\\
+\end{small}
+\linebreak
+\textbf{AT10} - Remove an item from an existing menu\\
+\begin{small}
+Given: A menu contains one burger\\
+When: Burger is removed from the menu\\
+Then: Menu contains zero items\\
+\end{small}
+\linebreak
+\textbf{AT11} - Add a recipe to a menu item\\
+\begin{small}
+Given: Burger doesn't have a recipe\\
+When: Recipe is added to burger\\
+Then: Burger now has an associated recipe\\
+\end{small}
+\pagebreak
+
+
+\noindent \textbf{AT12} - View the recipe for a menu item\\
+\begin{small}
+Given: Recipe for a burger needs to be viewed\\
+When: Burger selected AND View recipe selected\\
+Then: Recipe for burger displayed\\
+\end{small}
+\linebreak
+\textbf{AT13} - Add stock items\\
+\begin{small}
+Given: 5 buns are currently in stock\\
+When: 10 buns are added to stock\\
+Then: 15 buns are currently in stock\\
+\end{small}
+\linebreak
+\textbf{AT14} - View available stock\\
+\begin{small}
+Given: Levels of stock need to be viewed\\
+When: Stock screen is opened\\
+Then: Available stock is displayed\\
+\end{small}
+\linebreak
+\textbf{AT15} - Change price of item\\
+\begin{small}
+Given: Price of burger is \$10\\
+When: Price changed to \$12\\
+Then: Price of burger is now \$12\\
+\end{small}
+\linebreak
+\textbf{AT16} - Confirming an order\\
+\begin{small}
+Given: Current order contains one burger and one chips, total cost is \$15\\
+When: Order is selected and stock is available to create order items\\
+Then: Chef's order and receipt are printed and \$15 added to register\\
+\end{small}
+\linebreak
+
